@@ -1,0 +1,12 @@
+<div class="search-container">
+  <form class="search-form" #form="ngForm" (ngSubmit)="onSubmit(form)">
+    <span class="logo" routerLink="/">Galleri</span>
+    <input
+      class="search-input"
+      name="search"
+      ngModel
+      placeholder="Søg på billeder"
+    />
+    <button class="search-button">Søg</button>
+  </form>
+</div>
