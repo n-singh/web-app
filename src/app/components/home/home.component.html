@@ -1,0 +1,17 @@
+<div class="gallery">
+  <ng-container *ngFor="let photo of photos">
+    <div class="photo">
+      <div class="photo-thumb-container">
+        <img
+         *ngIf="photo.background_image"
+         src="{{ photo.background_image }}"
+         alt="thumbnail"
+         class="photo-thumbnail"
+       />
+      </div>
+      <div class="photo-description">
+        <p class="photo-name">{{ photo.name }}</p>
+      </div>
+    </div>
+  </ng-container>
+</div>
